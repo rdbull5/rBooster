@@ -1,0 +1,7 @@
+name: rBooster
+version: '1.0'
+main: com.example.rBooster.rBooster
+api-version: '1.16'
+depend: [LuckPerms]
+author: rdbull.
+description: rdbull. - rProject - https://discord.gg/cQyyy5uA

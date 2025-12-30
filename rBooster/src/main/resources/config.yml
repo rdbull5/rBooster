@@ -1,0 +1,67 @@
+discord:
+  bot-token: "discord_bot_token"
+  verify-channel-id: "booster_channel_id"
+  allowed-role-id: "booster_role_id"
+  cooldown-days: 10
+
+  button:
+    id: "boost_button"
+    label: "Booster Al"
+    emoji: " "
+    color: "PRIMARY"
+
+  messages:
+    no-permission: "❌ Bu komutu kullanmak için booster olmanız gerekli!"
+    no-admin-permission: "❌ Bu komutu sadece yöneticiler kullanabilir!"
+    usage: "❗ Lütfen bir Minecraft nicki giriniz."
+    cooldown-message: "⏳ Bu butonu tekrar kullanmak için %hours% saat %minutes% dakika beklemelisin."
+    success-pm: "✅ `%nick%` adlı oyuncuya 10 gün booster verildi!"
+    api-failed: "❌ API isteği başarısız veya yetkiniz yok."
+    server-error: "❌ Sunucu hatası: %error%"
+    
+  boostermesaji-content: |
+    **BOOSTER ALMA SİSTEMİ**
+    
+    **Boost alma sistemi ne işe yarar?**
+    ⇨ Discord sunucumuza takviye yaparak oyun içerisinde ödül alabilmenizi sağlar.
+    
+    **Nasıl yararlanırım?**
+    ⇨ **İlk olarak bu discord sunucusuna takviye yapmalısınız.**
+    ⇨ **Aşağıdaki butona tıklayarak Minecraft nickinizi giriniz.**
+    
+    **Bilgi:** 
+    • *1 Boost* ile *1'den fazla Boostun* farkı yoktur
+    • Butonu kullanmak için Boost rolünüz olmalıdır
+    • 10 günde bir kullanabilirsiniz
+    
+    **ÖNEMLİ:** Oyunda değilken kullanmayınız, iadesi yapılmaz!
+    
+    rProject - https://discord.gg/UyTwKtj25Z
+  modal:
+    title: "Booster Alma Sistemi"
+    input-label: "Minecraft Nickiniz"
+    placeholder: "Örnek: RdBuLL5"
+    button-label: "Gönder"
+
+api:
+  enabled: true
+  host: "localhost"
+  port: 1710
+  endpoint: "/boost"
+
+minecraft:
+  luckperms-command: "lp user %nick% parent addtemp booster 10d"
+  booster-given: "§dBooster rolünüz verildi!"
+  sound:
+    enabled: true
+    sound: "ENTITY_PLAYER_LEVELUP"
+    volume: 1.0
+    pitch: 1.0
+
+general:
+  auto-delete-time: 5
+  cooldown-file: "cooldowns.json"
+  intents:
+    - "GUILD_MESSAGES"
+    - "MESSAGE_CONTENT"
+    - "GUILD_MEMBERS"
