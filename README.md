@@ -1,6 +1,8 @@
 # rBooster
 Discord - Minecraft sync booster system.
 
+Discord: https://discord.gg/UyTwKtj25Z
+
 Wiki: https://www.mc-tr.com/konu/1-16-5-1-21-11-ucretsiz-gelismis-discord-sync-booster-plugini.136203/
 <img width="515" height="317" alt="image" src="https://github.com/user-attachments/assets/889abe62-f461-44e1-bd4e-23c2617c3634" />
 <img width="1250" height="303" alt="image" src="https://github.com/user-attachments/assets/56be7694-92f9-49aa-8a17-405a3b7cd206" />
